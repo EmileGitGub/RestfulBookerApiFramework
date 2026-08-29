@@ -5,7 +5,7 @@ on:
     branches:
       - Main
       - emile
-  pull requests:
+  pull_request:
     branches:
       - Main
 
