@@ -25,6 +25,20 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
+      - name: Create appsettings.json
+        run: |
+          cat > appsettings.json << EOF
+          {
+            "Application": {
+              "BaseUrl": "https://restful-booker.herokuapp.com"
+            },
+            "Authentication": {
+              "Username": "${{ secrets.API_USERNAME }}",
+              "Password": "${{ secrets.API_PASSWORD }}"
+            }
+          }
+          EOF
+
       - name: Build project
         run: dotnet build --no-restore
 
