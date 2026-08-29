@@ -5,13 +5,12 @@ on:
     branches:
       - Main
       - emile
-  pull_requests:
+  pull requests:
     branches:
       - Main
 
 jobs: 
   api-tests: 
-    
     runs-on: ubuntu-latest
 
     steps:
