@@ -9,6 +9,8 @@ namespace RestfulBookerApiFramework.Tests;
 public class BookingTests : BaseTest
 {
     [Test]
+    [Category("Smoke")]
+    [Category("Auth")]
     public async Task Should_Create_A_Booking()
     {
         var booking = TestDataFactory.CreateBooking();
@@ -25,6 +27,7 @@ public class BookingTests : BaseTest
     }
 
     [Test]
+    [Category("Booking")]
     public async Task Should_Get_A_Booking()
     {
         var booking = TestDataFactory.CreateBooking();

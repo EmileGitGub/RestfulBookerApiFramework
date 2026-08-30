@@ -9,6 +9,8 @@ namespace RestfulBookerApiFramework.Tests;
 public class AuthTests : BaseTest
 {
     [Test]
+    [Category("Smoke")]
+    [Category("Auth")]
     public async Task Should_Generate_Authentication_Token()
     {
         var authService = new AuthService(Api);

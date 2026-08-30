@@ -8,6 +8,7 @@ namespace RestfulBookerApiFramework.Tests;
 public class PingTest : BaseTest
 {
     [Test]
+    [Category("Smoke")]
     public async Task Ping_Should_Return_201()
     {   
         // Act

@@ -9,6 +9,8 @@ namespace RestfulBookerApiFramework.Tests;
 public class GetBookingTests : BaseTest
 {
     [Test]
+    [Category("Booking")]
+    [Category("Smoke")]
     public async Task Should_Get_A_Booking_By_Id()
     {
         // Arrange

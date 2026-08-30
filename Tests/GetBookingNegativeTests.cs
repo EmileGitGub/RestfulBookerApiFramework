@@ -7,6 +7,7 @@ namespace RestfulBookerApiFramework.Tests;
 public class GetBookingNegativeTests : BaseTest
 {
     [Test]
+    [Category("Booking")]
     public async Task Should_Return_404_When_Booking_Does_Not_Exist()
     {
         var invalidBookingId = 999999;

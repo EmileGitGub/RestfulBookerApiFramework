@@ -7,6 +7,7 @@ namespace RestfulBookerApiFramework.Tests;
 public class UpdateBookingTests : BaseTest
 {
     [Test]
+    [Category("Booking")]
     public async Task Should_Update_A_Booking()
     {
         // Arrange

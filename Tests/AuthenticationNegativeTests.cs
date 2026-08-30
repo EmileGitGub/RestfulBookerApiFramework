@@ -8,6 +8,7 @@ namespace RestfulBookerApiFramework.Tests;
 public class AuthenticationNegativeTests : BaseTest
 {
     [Test]
+    [Category("Auth")]
     public async Task Should_Return_403_When_Token_Is_Invalid()
     {
         var booking = TestDataFactory.CreateBooking();
