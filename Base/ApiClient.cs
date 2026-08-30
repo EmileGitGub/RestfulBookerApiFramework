@@ -142,6 +142,8 @@ public class ApiClient
         // Read the response body as a JSON string.
         var json = await response.Content.ReadAsStringAsync();
 
+        Console.WriteLine($"API Response: {json}");
+
         // Deserialize the JSON response into our C# model.
         return JsonSerializer.Deserialize<T>(
             json,
