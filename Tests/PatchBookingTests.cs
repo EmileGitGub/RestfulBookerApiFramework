@@ -9,6 +9,7 @@ namespace RestfulBookerApiFramework.Tests;
 public class PatchBookingTests : BaseTest
 {
     [Test]
+    [Category("Booking")]
     public async Task Should_Partially_Update_A_Booking()
     {
         var booking = TestDataFactory.CreateBooking();

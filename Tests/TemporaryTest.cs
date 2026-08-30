@@ -11,6 +11,8 @@ public class SettingsTest : BaseTest
 {
 
     [Test]
+    [Category("Smoke")]
+    [Category("Auth")]
     public async Task Should_Reuse_Token()
     {
 

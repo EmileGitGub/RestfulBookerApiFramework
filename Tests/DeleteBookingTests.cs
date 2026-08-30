@@ -8,6 +8,7 @@ namespace RestfulBookerApiFramework.Test;
 public class DeleteBookingTest : BaseTest
 {
     [Test]
+    [Category("Booking")]
     public async Task Should_Delete_A_Booking()
     {
         var booking = TestDataFactory.CreateBooking();
